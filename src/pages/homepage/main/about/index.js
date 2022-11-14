@@ -48,38 +48,28 @@ const About = forwardRef(({ ...props }, ref) => {
           </Box>
         </Box>
         <Stack spacing={12} p="8px" w={{ base: "100%", xl: "50%" }}>
-          <Body mb="2em">
-            Hello! I'm Greg, a junior front-end developer based in Bedford, UK.
-            I love to work on exciting projects that test what I've learnt,
-            whilst being exposed to the power and potential of the ever-evolving
-            technologies around us. I'm always looking for better, and more
-            importantly, ethical and accessible ways to solve the common
-            problems we are faced with day-to-day.
+          <Body mb="1.5em">
+            Hi, I'm Taciano, a junior full-stack developer. I love working on
+            exciting projects that test what I've learned, while being exposed
+            to the power and potential of the ever-evolving technologies around
+            us. I'm always looking for better, and more importantly, ethical and
+            affordable ways to solve the common problems we encounter on a daily
+            basis.
           </Body>
           <Box>
             <Heading3>What I've been up to:</Heading3>
             <Stack as="ul">
               <Bullet as="li">Building this!</Bullet>
-              <Bullet as="li">Getting deeper into React and Nodejs</Bullet>
-              <Bullet as="li">Learning GraphQL</Bullet>
+              <Bullet as="li">Studying computer science</Bullet>
+              <Bullet as="li">Getting Started in UX Design</Bullet>
               <Bullet as="li">
-                Live Coding on{" "}
-                <Link
-                  color={secondary}
-                  textDecor="underline"
-                  href="https://www.twitch.tv/gregogun"
-                >
-                  Twitch
-                </Link>
-              </Bullet>
-              <Bullet as="li">
-                Starting the{" "}
-                <Link
-                  color={secondary}
-                  textDecor="underline"
-                  href="https://chingu.io/"
-                >
-                  Chingu Voyage 28
+                Getting deeper into{" "}
+                <Link color={secondary} textDecor="underline" href="">
+                  React
+                </Link>{" "}
+                and{" "}
+                <Link color={secondary} textDecor="underline" href="">
+                  Nodejs
                 </Link>
               </Bullet>
             </Stack>

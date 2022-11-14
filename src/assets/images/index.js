@@ -2,7 +2,7 @@ import { Image, useColorMode } from "@chakra-ui/react";
 import React from "react";
 import profile from "./me.jpg";
 import portfolio from "./portfolio";
-import gitjobs from "./gitjobs";
+import dogs from "./dogs";
 
 export const ImageProfile = () => {
   return (
@@ -17,9 +17,9 @@ export const ImageProfile = () => {
         lg: "320px",
         xl: "400px",
       }}
-      src={profile}
+      // src={profile}
       fallbackSrc="https://via.placeholder.com/500"
-      alt="Greg Ogun"
+      alt="Taciano da Hora"
     />
   );
 };
@@ -45,7 +45,7 @@ export const PortfolioImg = () => {
   );
 };
 
-export const GitjobsImg = () => {
+export const Dogs = () => {
   const { colorMode } = useColorMode();
   return (
     <Image
@@ -54,14 +54,9 @@ export const GitjobsImg = () => {
       objectFit="cover"
       boxSize="100%"
       boxShadow={{ base: "0 0 0 2px", md: "0 0 0 4px" }}
-      src={gitjobs.light[2]}
-      srcSet={`${
-        colorMode === "light" ? gitjobs.light[0] : gitjobs.dark[0]
-      } 400w, ${
-        colorMode === "light" ? gitjobs.light[1] : gitjobs.dark[1]
-      } 800w`}
+      src={dogs.light[0]}
       fallbackSrc="https://via.placeholder.com/500"
-      alt="Gitjobs project"
+      alt="Dogs project"
     />
   );
 };

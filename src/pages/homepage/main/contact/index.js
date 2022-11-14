@@ -4,7 +4,6 @@ import { Line, SectionHeader } from "../../../../components/layout";
 import { PrimaryButton } from "../../../../components/button";
 import { Body, Heading2, TextLarge } from "../../../../components/typography";
 import useColorSwitcher from "../../../../utils/hooks/useColorSwitcher";
-import { FiMail } from "react-icons/fi";
 
 const Contact = forwardRef(({ ...props }, ref) => {
   const { secondary } = useColorSwitcher();
@@ -40,7 +39,11 @@ const Contact = forwardRef(({ ...props }, ref) => {
 const ContactButton = ({ secondary }) => {
   const [icon, setIcon] = useState(false);
   return (
-    <PrimaryButton as="a" href="mailto:gregogun97@gmail.com" theme={secondary}>
+    <PrimaryButton
+      as="a"
+      href="mailto:tacianohora2020@hotmail.com"
+      theme={secondary}
+    >
       GET IN TOUCH
     </PrimaryButton>
   );

@@ -1,5 +1,4 @@
 export { default as IconReact } from "./IconReact";
-export { default as IconHtml } from "./IconHtml";
 export { default as IconSass } from "./IconSass";
 export { default as IconJS } from "./IconJS";
 export { default as IconNode } from "./IconNode";

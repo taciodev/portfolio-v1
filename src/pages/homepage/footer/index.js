@@ -28,7 +28,7 @@ const SocialLink = ({ name, href, icon, ...props }) => {
         aria-label={name}
         {...props}
         href={href}
-        // target="_blank"
+        target="_blank"
         // rel="noopener"
         // rel="noreferrer"
       >
@@ -44,35 +44,37 @@ const Footer = () => {
       <Stack as="ul" mb="16px" direction="row" spacing={4}>
         <SocialLink
           name="LinkedIn"
-          href="https://www.linkedin.com/in/greg-ogun/"
+          href="https://www.linkedin.com/in/taciano-da-hora/"
           icon={IconLinkedin}
         />
         <SocialLink
           name="Github"
-          href="https://github.com/gregogun"
+          href="https://github.com/taciodev"
           icon={IconGithubAlt}
         />
         <SocialLink
           name="Twitter"
-          href="https://twitter.com/gregogun"
+          href="https://twitter.com/"
           icon={IconTwitter}
         />
+        {/*
         <SocialLink
           name="Youtube"
           href="https://www.youtube.com/channel/UCQDUHOvgodaEqjHm9Ihn87w"
           icon={IconYoutube}
         />
-        <SocialLink
+
+         <SocialLink
           name="Twitch"
           href="https://www.twitch.tv/gregogun"
           icon={IconTwitch}
-        />
+        />  
+        
         <SocialLink name="Dev" href="https://dev.to/gregogun" icon={IconDev} />
+        */}
       </Stack>
       <Box display="grid" placeItems="center">
-        <Link href="https://github.com/gregogun">
-          Designed & Coded by Greg Ogun
-        </Link>
+        <Link href="https://github.com/gregogun">Coded by Taciano da Hora</Link>
       </Box>
     </Box>
   );

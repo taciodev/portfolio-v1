@@ -2,7 +2,6 @@ export { MenuIcon } from "./custom";
 export { Logo } from "./custom";
 export {
   IconReact,
-  IconHtml,
   IconSass,
   IconJS,
   IconNode,

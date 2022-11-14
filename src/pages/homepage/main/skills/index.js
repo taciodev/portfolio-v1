@@ -1,22 +1,6 @@
 import React, { forwardRef } from "react";
-import { Box, Text, Icon, HStack, VStack, Grid } from "@chakra-ui/react";
+import { Box, Text, HStack, VStack, Grid, Flex, color } from "@chakra-ui/react";
 import { Line, SectionHeader } from "../../../../components/layout";
-import {
-  IconReact,
-  IconHtml,
-  IconSass,
-  IconNode,
-  IconElectron,
-  IconInvision,
-  IconFigma,
-  IconAdobe,
-  IconCss,
-  IconWebpack,
-  IconGit,
-  IconJS,
-  IconResponsive,
-  IconRest,
-} from "../../../../assets/icons";
 import { Body, Heading2 } from "../../../../components/typography";
 import useColorSwitcher from "../../../../utils/hooks/useColorSwitcher";
 
@@ -42,10 +26,9 @@ const Skills = forwardRef(({ ...props }, ref) => {
         templateColumns={{
           base: "repeat(2, 1fr)",
           md: "repeat(3, 1fr)",
-          xl: "repeat(4, 1fr)",
+          xl: "repeat(3, 1fr)",
         }}
-        border="1px solid"
-        gap={{ base: 8, md: 16 }}
+        gap={{ base: 8 }}
         placeItems="center"
       >
         <Languages />
@@ -56,38 +39,57 @@ const Skills = forwardRef(({ ...props }, ref) => {
   );
 });
 
-const SkillBox = ({ icon, name, ...props }) => {
+const SkillBox = ({ children, name, bg }) => {
   const { colorDark } = useColorSwitcher();
   return (
-    <VStack
+    <Flex
       align="center"
       justify="center"
-      boxSize={{ base: "7em", md: "8em", xl: "10em" }}
+      width={{ base: "250px" }}
+      height="60px"
+      border="1px solid #DDDDDD"
+      borderRadius="18px"
       spacing={4}
+      padding="12px 36px"
+      alignItems="center"
+      justifyContent="flex-start"
+      _hover={{
+        backgroundColor: bg,
+        transform: "translateY(-8px)",
+        color: "#FFFFFF",
+      }}
+      transition="all ease .5s"
+      cursor="pointer"
     >
-      <Icon
-        {...props}
-        fill={colorDark}
-        boxSize={{ base: "2.5em", md: "3em", xl: "4em" }}
-        as={icon}
-      />
-      <Body
-        textAlign="center"
-        fontSize={{ base: "1em", md: "1.2em", xl: "1.5em" }}
+      <Box
+        backgroundColor={bg}
+        padding="4px"
+        borderRadius="12px"
+        marginRight="16px"
+        transition="all ease .5s"
       >
-        {name}
-      </Body>
-    </VStack>
+        {children}
+      </Box>
+      <Box fontWeight="medium">{name}</Box>
+    </Flex>
   );
 };
 
 const Languages = () => {
   return (
     <>
-      <SkillBox icon={IconHtml} name="HTML5" />
-      <SkillBox icon={IconCss} name="CSS3" />
-      <SkillBox icon={IconSass} name="SCSS" />
-      <SkillBox icon={IconResponsive} name="Responsive Design" />
+      <SkillBox name="HTML5" bg="#FF6D00">
+        <img src="https://img.icons8.com/ios/32/FFFFFF/html-5--v1.png" />
+      </SkillBox>
+      <SkillBox name="CSS3" bg="#039BE5">
+        <img src="https://img.icons8.com/ios/32/FFFFFF/css3.png" />
+      </SkillBox>
+      <SkillBox name="JavaScript" bg="#FFD600">
+        <img src="https://img.icons8.com/ios/32/FFFFFF/javascript--v1.png" />
+      </SkillBox>
+      <SkillBox name="TypeScript" bg="#3178c6">
+        <img src="https://img.icons8.com/ios/32/FFFFFF/typescript.png" />
+      </SkillBox>
     </>
   );
 };
@@ -95,10 +97,24 @@ const Languages = () => {
 const Frameworks = () => {
   return (
     <>
-      <SkillBox icon={IconJS} name="JavaScript" />
-      <SkillBox icon={IconReact} name="React" />
-      <SkillBox icon={IconNode} name="Nodejs" />
-      <SkillBox icon={IconElectron} name="Electron" />
+      <SkillBox name="React.js" bg="#61dafb">
+        <img src="https://img.icons8.com/ios/32/FFFFFF/react-native--v1.png" />
+      </SkillBox>
+      <SkillBox name="Node.js" bg="#417e38">
+        <img src="https://img.icons8.com/windows/32/FFFFFF/node-js.png" />
+      </SkillBox>
+      <SkillBox name="Next.js" bg="#636363">
+        <img src="https://img.icons8.com/ios/32/FFFFFF/circled-chevron-right.png" />
+      </SkillBox>
+      <SkillBox name="Golang" bg="#61dafb">
+        <img src="https://img.icons8.com/ios/32/FFFFFF/golang.png" />
+      </SkillBox>
+      <SkillBox name="Python" bg="#FFC107">
+        <img src="https://img.icons8.com/ios/32/FFFFFF/python--v1.png" />
+      </SkillBox>
+      <SkillBox name="Firebase" bg="#f57c00">
+        <img src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/32/FFFFFF/external-firebase-a-googles-mobile-platform-that-helps-you-quickly-develop-high-quality-apps-logo-regular-tal-revivo.png" />
+      </SkillBox>
     </>
   );
 };
@@ -106,10 +122,24 @@ const Frameworks = () => {
 const Tools = () => {
   return (
     <>
-      <SkillBox icon={IconRest} name="RESTful API" />
-      <SkillBox icon={IconGit} name="Git" />
-      <SkillBox icon={IconFigma} name="Figma" />
-      <SkillBox icon={IconAdobe} name="Adobe Suite" />
+      <SkillBox name="Redux" bg="#6a43a9">
+        <img src="https://img.icons8.com/ios/32/FFFFFF/redux.png" />
+      </SkillBox>
+      <SkillBox name="Git" bg="#F4511E">
+        <img src="https://img.icons8.com/ios/32/FFFFFF/git.png" />
+      </SkillBox>
+      <SkillBox name="Github" bg="#003f8c">
+        <img src="https://img.icons8.com/ios-glyphs/32/FFFFFF/github.png" />
+      </SkillBox>
+      <SkillBox name="Figma" bg="#5551ff">
+        <img src="https://img.icons8.com/ios-glyphs/32/FFFFFF/figma.png" />
+      </SkillBox>
+      <SkillBox name="Postman" bg="#ff6c37">
+        <img src="https://img.icons8.com/wired/32/FFFFFF/postman-api.png" />
+      </SkillBox>
+      <SkillBox name="Vscode" bg="#0066b8">
+        <img src="https://img.icons8.com/ios/32/FFFFFF/visual-studio.png" />
+      </SkillBox>
     </>
   );
 };

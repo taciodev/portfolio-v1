@@ -1,5 +1,5 @@
 import React from "react";
-import { GitjobsImg, PortfolioImg } from "../../assets/images";
+import { Dogs, PortfolioImg } from "../../assets/images";
 
 const projects = [
   {
@@ -17,15 +17,15 @@ const projects = [
     id: 1,
   },
   {
-    name: "gitjobs",
+    name: "dogs",
     info: [
-      "Search for jobs available on the Github Jobs site, with reimagined, fully responsive design and functionality.",
-      "You can search by job title/keyword, location or full time positions.",
-      "Supports light/dark mode.",
+      "Instagram-like app, dogs a social network for dogs.",
+      "I use technologies like redux, and the victory library for graph construction.",
+      "Complete login system.",
     ],
-    media: <GitjobsImg />,
-    live: "https://go-gitjobs.netlify.app",
-    repo: "https://github.com/gregogun/github-jobs-api",
+    media: <Dogs />,
+    live: "https://dogs-taupe.vercel.app",
+    repo: "https://github.com/taciodev/dogs",
     id: 2,
   },
 ];

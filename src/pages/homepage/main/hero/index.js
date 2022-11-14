@@ -83,9 +83,9 @@ const HeroText = ({ handleClick, ...props }) => {
     <Box as="section" {...props}>
       <IntroText>Hello, I'm</IntroText>
 
-      <Heading1>Greg Ogun</Heading1>
+      <Heading1>Taciano</Heading1>
       <Heading3 big={true} color={secondary}>
-        Front-End Developer
+        Full-Stack Developer
       </Heading3>
       <Body
         w={{ base: "90%", xl: "70%" }}
@@ -103,7 +103,7 @@ const HeroText = ({ handleClick, ...props }) => {
       <Box my={{ base: "32px" }}>
         <PrimaryButton
           as="a"
-          href="mailto:gregogun97@gmail.com"
+          href="mailto:tacianohora2020@hotmail.com"
           theme={secondary}
         >
           GET IN TOUCH
