@@ -24,8 +24,8 @@ const Skills = forwardRef(({ ...props }, ref) => {
         py="5em"
         w={{ base: "100%", lg: "90%" }}
         templateColumns={{
-          base: "repeat(2, 1fr)",
-          md: "repeat(3, 1fr)",
+          base: "1fr",
+          md: "repeat(2, 1fr)",
           xl: "repeat(3, 1fr)",
         }}
         gap={{ base: 8 }}

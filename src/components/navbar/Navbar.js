@@ -1,15 +1,5 @@
-import React, { useRef } from "react";
-import {
-  Box,
-  Flex,
-  useColorMode,
-  IconButton,
-  useColorModeValue,
-  Icon,
-  useDisclosure,
-  Stack,
-  VisuallyHidden,
-} from "@chakra-ui/react";
+import React from "react";
+import { Flex, useColorMode, IconButton, Icon } from "@chakra-ui/react";
 import { FaMoon } from "react-icons/fa";
 import { MdWbSunny } from "react-icons/md";
 import { Logo } from "../../assets/icons";
@@ -33,6 +23,7 @@ const Navbar = ({ aboutRef, skillsRef, projectsRef, contactRef }) => {
       w={{ base: "100%", md: "90%", lg: "80%" }}
       my="3"
       justify="space-between"
+      alignItems="center"
       align="center"
       direction="row"
       position="relative"
@@ -47,9 +38,9 @@ const Navbar = ({ aboutRef, skillsRef, projectsRef, contactRef }) => {
         order={{ lg: -1 }}
         stroke={colorDark}
         strokeWidth="2px"
-        p="8px"
-        w="64px"
-        h="64px"
+        paddingTop="6px"
+        w="42px"
+        h="42px"
         as={Logo}
       />
 
