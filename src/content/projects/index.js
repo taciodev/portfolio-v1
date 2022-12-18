@@ -19,9 +19,10 @@ const projects = [
   {
     name: "dogs",
     info: [
-      "Instagram-like app, dogs a social network for dogs.",
-      "I use technologies like redux, and the victory library for graph construction.",
-      "Complete login system.",
+      "Projeto do curso 'React Completo' da Origamid, utilizando Redux com React.",
+      "Dogs, uma rede social para cachorros.",
+      "Na página do usuário, é possível visualizar o seu feed, postar fotos e acessar as estatísticas de visualizações.",
+      "Funciona como PWA (Progressive Web App), podendo ser utilizado como um aplicativo.",
     ],
     media: <Dogs />,
     live: "https://dogs-taupe.vercel.app",

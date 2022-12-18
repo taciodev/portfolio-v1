@@ -9,7 +9,7 @@ const Skills = forwardRef(({ ...props }, ref) => {
     <Box as="section" outline="0" ref={ref} tabIndex={-1} {...props}>
       <Box mb="128px">
         <SectionHeader sibling={<Line />} mr="16px">
-          <Heading2>skills</Heading2>
+          <Heading2>habilidades</Heading2>
         </SectionHeader>
       </Box>
       <Text
@@ -17,7 +17,7 @@ const Skills = forwardRef(({ ...props }, ref) => {
         fontSize={{ base: "1em", sm: "1.25em", md: "1.5em", xl: "2em" }}
         textAlign="center"
       >
-        Technologies & tools I work with:
+        Tecnologias e ferramentas:
       </Text>
       <Grid
         mx="auto"
@@ -131,9 +131,9 @@ const Tools = () => {
       <SkillBox name="Github" bg="#003f8c">
         <img src="https://img.icons8.com/ios-glyphs/32/FFFFFF/github.png" />
       </SkillBox>
-      <SkillBox name="Figma" bg="#5551ff">
+      {/* <SkillBox name="Figma" bg="#5551ff">
         <img src="https://img.icons8.com/ios-glyphs/32/FFFFFF/figma.png" />
-      </SkillBox>
+      </SkillBox> */}
       <SkillBox name="Postman" bg="#ff6c37">
         <img src="https://img.icons8.com/wired/32/FFFFFF/postman-api.png" />
       </SkillBox>

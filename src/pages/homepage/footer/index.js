@@ -29,7 +29,7 @@ const SocialLink = ({ name, href, icon, ...props }) => {
         {...props}
         href={href}
         target="_blank"
-        // rel="noopener"
+        rel="noreferrer noopener"
         // rel="noreferrer"
       >
         <Icon as={icon} />
@@ -74,7 +74,9 @@ const Footer = () => {
         */}
       </Stack>
       <Box display="grid" placeItems="center">
-        <Link href="https://github.com/gregogun">Coded by Taciano da Hora</Link>
+        <Link href="https://github.com/taciodev">
+          Dsenvolvido por Taciano da Hora
+        </Link>
       </Box>
     </Box>
   );

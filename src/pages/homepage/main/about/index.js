@@ -5,7 +5,6 @@ import SpherePulse from "../../../../assets/motion/SpherePulse";
 import { Line, SectionHeader } from "../../../../components/layout";
 import {
   Body,
-  BodyLink,
   Bullet,
   Heading2,
   Heading3,
@@ -21,7 +20,7 @@ const About = forwardRef(({ ...props }, ref) => {
     <Box as="section" outline="0" ref={ref} tabIndex={-1} {...props} w="100%">
       <Box w="100%" mb={{ base: "32px", md: "64px", xl: "128px" }}>
         <SectionHeader sibling={<Line />} mr="16px">
-          <Heading2>about</Heading2>
+          <Heading2>sobre</Heading2>
         </SectionHeader>
       </Box>
       <Stack
@@ -49,21 +48,21 @@ const About = forwardRef(({ ...props }, ref) => {
         </Box>
         <Stack spacing={12} p="8px" w={{ base: "100%", xl: "50%" }}>
           <Body mb="1.5em">
-            Hi, I'm Taciano, a junior full-stack developer. I love working on
-            exciting projects that test what I've learned, while being exposed
-            to the power and potential of the ever-evolving technologies around
-            us. I'm always looking for better, and more importantly, ethical and
-            affordable ways to solve the common problems we encounter on a daily
-            basis.
+            Olá, sou o Taciano, um desenvolvedor full-stack júnior. Adoro
+            trabalhar em projetos empolgantes que testam o que aprendi, ao mesmo
+            tempo em que sou exposto ao poder e ao potencial das tecnologias em
+            constante evolução ao nosso redor. Estou sempre procurando maneiras
+            melhores e, mais importante, éticas e acessíveis de resolver os
+            problemas comuns que encontramos no dia a dia.
           </Body>
           <Box>
-            <Heading3>What I've been up to:</Heading3>
+            <Heading3>O que eu tenho feito:</Heading3>
             <Stack as="ul">
-              <Bullet as="li">Building this!</Bullet>
-              <Bullet as="li">Studying computer science</Bullet>
-              <Bullet as="li">Getting Started in UX Design</Bullet>
+              <Bullet as="li">Construindo isso!</Bullet>
+              <Bullet as="li">Cursando ciência da computação</Bullet>
+              <Bullet as="li">Iniciando em UX Design</Bullet>
               <Bullet as="li">
-                Getting deeper into{" "}
+                Aprofundando-se{" "}
                 <Link color={secondary} textDecor="underline" href="">
                   React
                 </Link>{" "}

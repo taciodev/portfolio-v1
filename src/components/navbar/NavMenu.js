@@ -1,15 +1,6 @@
 import React, { useState } from "react";
-import {
-  Box,
-  Link,
-  List,
-  ListItem,
-  Stack,
-  Text,
-  useDisclosure,
-} from "@chakra-ui/react";
+import { Box, Link, ListItem, Stack, useDisclosure } from "@chakra-ui/react";
 import useColorSwitcher from "../../utils/hooks/useColorSwitcher";
-import { Link as ScrollLink } from "react-scroll";
 import SideNav from "./SideNav";
 
 const NavMenu = ({

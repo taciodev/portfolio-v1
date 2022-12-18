@@ -81,7 +81,7 @@ const HeroText = ({ handleClick, ...props }) => {
   const { secondary } = useColorSwitcher();
   return (
     <Box as="section" {...props}>
-      <IntroText>Hello, I'm</IntroText>
+      <IntroText>Olá, eu sou</IntroText>
 
       <Heading1>Taciano</Heading1>
       <Heading3 big={true} color={secondary}>
@@ -97,8 +97,8 @@ const HeroText = ({ handleClick, ...props }) => {
         }}
         fontWeight="bold"
       >
-        A curiousity-driven coder with a passion for designing and building
-        user-centric, inclusive experiences on the web.
+        Um desenvolvedor movido pela curiosidade e apaixonado por projetar e
+        construir experiências{/*  inclusivas */} centradas no usuário na web.
       </Body>
       <Box my={{ base: "32px" }}>
         <PrimaryButton

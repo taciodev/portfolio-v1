@@ -12,7 +12,7 @@ const Contact = forwardRef(({ ...props }, ref) => {
     <Box outline="0" ref={ref} tabIndex={-1} {...props} as="section">
       <Box mb="128px">
         <SectionHeader sibling={<Line />} mr="16px">
-          <Heading2>contact</Heading2>
+          <Heading2>contatos</Heading2>
         </SectionHeader>
       </Box>
       <Box
@@ -22,13 +22,13 @@ const Contact = forwardRef(({ ...props }, ref) => {
         placeItems="center"
       >
         <TextLarge mb="32px" align="center">
-          I'm currently open to freelance and actively looking for full-time job
-          opportunties, so if you like what you've seen please don't hesitate to
-          get in touch!
+          Atualmente, estou aberto a trabalhos como freelance e procurando
+          ativamente por oportunidades de trabalho em tempo integral, então, se
+          você gostou do que viu, não hesite em entrar em contato!
         </TextLarge>
         <TextLarge mb="64px" align="center">
-          If you have any questions or would just like to say hi, my inbox is
-          always open and I'll endeavour to get back to you as soon as I can.
+          Se você tiver alguma dúvida ou apenas quiser dizer oi, minha caixa de
+          entrada está sempre aberta e tentarei responder o mais breve possível.
         </TextLarge>
         <ContactButton secondary={secondary} />
       </Box>

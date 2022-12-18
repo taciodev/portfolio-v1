@@ -31,7 +31,7 @@ const Projects = forwardRef(({ ...props }, ref) => {
     >
       <Box mb="128px">
         <SectionHeader sibling={<Line />} mr="16px">
-          <Heading2>projects</Heading2>
+          <Heading2>projetos</Heading2>
         </SectionHeader>
       </Box>
       {projects.map((project) => (

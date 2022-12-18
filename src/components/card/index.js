@@ -96,7 +96,7 @@ export const ProjectInfoCard = ({
         >
           {live !== null && (
             <PrimaryButton w="100%" as="a" href={live}>
-              LIVE SITE
+              SITE AO VIVO
             </PrimaryButton>
           )}
           {repo !== null && (
